@@ -87,9 +87,9 @@ def elsoo():
           'Ha ki akarod nyitni a dobozt?')
     kinyit=valaszto(1)
     if kinyit==1:
-        pass
+        ketszazhetven()
     else:
-        pass
+        hatvanhat()
 
 
 
