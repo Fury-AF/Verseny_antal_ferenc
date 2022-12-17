@@ -8,7 +8,6 @@ jatekos_szerencse=0
 
 teremtmeny_ugyesseg=0
 teremtmeny_eletero=0
-teremtmeny_szerencse=0
 
 
 
@@ -84,27 +83,26 @@ def beker():
 
 def elsoo():
     kiir()
-    valaszto(1)
     print('Miután öt percet haladtál lassan az alagútban, egy kőasztalhoz érsz, amely a bal oldali fal mellett áll. Hat doboz van rajta, egyikükre a te neved festették. '
           'Ha ki akarod nyitni a dobozt?')
-    kinyit=input('Kérlek válassz ki nyitod I-igen, N-nem: ' )
-    if kinyit.upper()=='I':
-        ketszazhetven()
+    kinyit=valaszto(1)
+    if kinyit==1:
+        pass
     else:
-        hatvanhat()
+        pass
 
 
 
 def otvenhat():
     print('Látod, hogy az akadály egy széles, barna, sziklaszerű tárgy. '
           'Megérinted, és meglepve tapasztalod, hogy lágy, szivacsszerű. ')
-    kiir(56)
+    valaszto(56)
 def hatvanhat():
     print('Néhány perc gyaloglás után egy elágazáshoz érsz az'
           ' alagútban. Egy, a falra festett fehér nyíl nyugatfelé mutat. A földön nedves lábnyomok jelzik, merre haladtak '
           'az előtted járók. Nehéz biztosan megmondani, de úgy tűnik, hogy három közülük a nyíl irányába halad, míg '
           'egyikük úgy döntött, hogy keletnek megy. ')
-    kiir(66)
+    valaszto(66)
 
 def szazharminchet():
     print('Ahogy végigmész az alagúton, csodálkozva látod, hogy egy jókora vasharang csüng alá a boltozatról.')
